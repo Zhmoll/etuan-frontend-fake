@@ -1,0 +1,141 @@
+/*顶部导航栏漂浮所需要的body边距*/
+/*body{*/
+    /*margin-top: 50px;*/
+/*}*/
+*{
+    text-shadow: 0 0 3px lightgreen;
+}
+/*顶部导航栏*/
+.myNav-On-Top {
+    margin-bottom: 0;
+}
+.myNav-On-Top .navbar-brand img{
+    /*LOGO*/
+    height: 30px;
+    margin-top: -5px;
+}
+.myNav-On-Top #myNav-On-Top-Content-id ul li{
+    /*导航条菜单内容*/
+    padding-left: 0;
+    padding-right: 0;
+    min-width: 80px;
+}
+.myNav-On-Top #myNav-On-Top-Content-id ul li a{
+    text-align: center;
+}
+
+/*首页巨幕*/
+.myJumbotron-Homepage{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+.myJumbotron-Homepage .myJumbotron-Homepage-Content *{
+    text-shadow: 0 0 3px red;
+}
+
+/*首页轮播*/
+.myBreadcrumb .breadcrumb{
+    margin-bottom: 10px;
+}
+
+/*左侧导航栏*/
+.myNav-On-Left .navbarlist-left.affix{
+    top: 25px;
+}
+.myNav-On-Left .navbarlist-left .active a{
+    background-color: #31708f;
+}
+.myNav-On-Left .navbarlist-left a{
+    background-color: #f8f8f8;
+}
+
+/*加注释的是保留数据，用于有顶部栏浮动的情况下修正锚偏移和左侧导航监听偏移，效果不好*/
+.myListFull .myListHead{
+    /*margin-top: -85px;*/
+    /*margin-bottom: 85px;*/
+}
+.myListFull .myListHead-left {
+    /*解决滚动定位偏移问题*/
+    /*position: relative;*/
+}
+.myListFull .myListHead-left span{
+    color: #555555;
+    margin-left: 15px;
+    /*解决滚动定位偏移问题*/
+    /*position: absolute;*/
+    /*margin-top: 70px;*/
+    /*margin-bottom: -70px;*/
+}
+.myListFull .myListHead-right a{
+    margin-right: 15px;
+    /*解决滚动定位偏移问题*/
+    /*原来top是20*/
+    margin-top: 12px;
+    /*margin-bottom: -70px;*/
+}
+
+
+/*信息卡片*/
+.myListContent-Card *{
+    margin: 0;
+    padding: 0;
+}
+.myListContent-Card{
+    padding:0;
+    margin-left: -8px;
+    margin-right: -8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s, background-color 0.3s,color 0.3s,transform 0.3s;
+    -webkit-transition: box-shadow 0.3s , background-color 0.3s,color 0.3s,-webkit-transform 0.3s;
+    -moz-transition: box-shadow 0.3s , background-color 0.3s,color 0.3s,-moz-transform 0.3s;
+    -ms-transition: box-shadow 0.3s , background-color 0.3s,color 0.3s,-ms-transform 0.3s;
+    -o-transition: box-shadow 0.3s , background-color 0.3s,color 0.3s,-o-transform 0.3s;
+}
+.myListContent-Card:hover{
+    cursor: pointer;
+    color: darkblue;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 4px #0060CA;
+    -webkit-transform: scale(1.03, 1.03);
+    -moz-transform: scale(1.03, 1.03);
+    -ms-transform: scale(1.03, 1.03);
+    -o-transform: scale(1.03, 1.03);
+    transform: scale(1.03, 1.03);
+}
+.myListContent-Card .myListContent-Card-Hidden-Control{
+    /*padding: 10px;*/
+    /*overflow: hidden;*/
+}
+.myListContent-Card .caption{
+    height: 105px;
+    padding: 0;
+    margin: 10px;
+}
+.myListContent-Card .caption h4{
+    margin-top: 10px;
+    text-align: center;
+    color: darkslategray;
+    /*长了就隐藏，活该写那么多*/
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.myListContent-Card .caption small{
+    display: block;
+    text-align: center;
+    color: darkgrey;
+    /*长了就隐藏*/
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.myListContent-Card .caption hr{
+    margin: 5px;
+    color: #dddddd;
+}
+.myListContent-Card .caption p{
+    font-size: 13px;
+    color: gray;
+
+}
